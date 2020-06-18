@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DavesPieShop.Models;
+using DavesPieShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -35,8 +36,10 @@ namespace DavesPieShop.Controllers
             // ViewBag isn't used all that much because it's too dynamic
             // More common to pass data into View method, then define a @model variable in the view
             // Also can create a View Model class that wraps all the data needed in the view
-            ViewBag.CurrentCategory = "Cheese cakes";
-            return View(_pieRepository.AllPies);
+            PiesListViewModel piesListViewModel = new PiesListViewModel();
+            piesListViewModel.Pies = _pieRepository.AllPies;
+            piesListViewModel.CurrentCategory = "Cheese cakes";
+            return View(piesListViewModel);
         }
 
     }

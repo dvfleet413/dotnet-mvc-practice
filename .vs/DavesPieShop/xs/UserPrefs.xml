@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Views/_ViewStart.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Views/_ViewImports.cshtml">
     <Files>
       <File FileName="DavesPieShop/Program.cs" Line="14" Column="47" />
       <File FileName="DavesPieShop/Startup.cs" />
@@ -9,6 +9,7 @@
       <File FileName="DavesPieShop/Views/Shared/_Layout.cshtml" Line="8" Column="7" />
       <File FileName="DavesPieShop/Views/Pie/List.cshtml" Line="11" Column="2" />
       <File FileName="DavesPieShop/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="DavesPieShop/Views/_ViewImports.cshtml" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +19,7 @@
             <Node name="DavesPieShop" expanded="True">
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />
-                <Node name="_ViewStart.cshtml" selected="True" />
+                <Node name="_ViewImports.cshtml" selected="True" />
               </Node>
             </Node>
           </Node>

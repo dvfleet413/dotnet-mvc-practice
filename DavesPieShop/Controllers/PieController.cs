@@ -29,6 +29,13 @@ namespace DavesPieShop.Controllers
         public ViewResult List()
         {
             // View is a built in method of .NET Core MVC for rendering views.  Data is passed in as an argument
+            // How does controller know which view? It looks for './Views/{ControllerName}/{ActionName}'
+            // In this case './Views/Pie/list'
+            // ViewBag allows us to add data to the view from the controller - in controller ViewBag.Message = "foobar', in View with Razor syntax @ViewBag.Message
+            // ViewBag isn't used all that much because it's too dynamic
+            // More common to pass data into View method, then define a @model variable in the view
+            // Also can create a View Model class that wraps all the data needed in the view
+            ViewBag.CurrentCategory = "Cheese cakes";
             return View(_pieRepository.AllPies);
         }
 

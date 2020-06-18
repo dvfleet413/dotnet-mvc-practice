@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Controllers/PieController.cs">
     <Files>
       <File FileName="DavesPieShop/Program.cs" Line="21" Column="56" />
-      <File FileName="DavesPieShop/Startup.cs" Line="37" Column="161" />
-      <File FileName="DavesPieShop/Controllers/PieController.cs" Line="16" Column="27" />
+      <File FileName="DavesPieShop/Startup.cs" Line="68" Column="42" />
+      <File FileName="DavesPieShop/Controllers/PieController.cs" Line="29" Column="16" />
+      <File FileName="DavesPieShop/Views/Pie/List.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,17 +12,15 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="DavesPieShop" expanded="True">
             <Node name="DavesPieShop" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
                 <Node name="PieController.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Pie" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

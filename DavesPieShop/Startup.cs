@@ -67,10 +67,9 @@ namespace DavesPieShop
             // this middleware enables routing the request to the correct endpoint
             app.UseEndpoints(endpoints =>
             {
-                // this has been modified to handle routing in a more MVC way, instead of routing everything to "Hello World"
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{actions=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

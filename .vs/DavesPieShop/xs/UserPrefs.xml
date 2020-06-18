@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Models/MockPieRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Models/MockCategoryRepository.cs">
     <Files>
       <File FileName="DavesPieShop/Program.cs" Line="21" Column="56" />
-      <File FileName="DavesPieShop/Startup.cs" />
-      <File FileName="DavesPieShop/Models/Pie.cs" />
-      <File FileName="DavesPieShop/Models/Category.cs" />
-      <File FileName="DavesPieShop/Models/IPieRepository.cs" />
-      <File FileName="DavesPieShop/Models/ICategoryRepository.cs" />
-      <File FileName="DavesPieShop/Models/MockCategoryRepository.cs" />
-      <File FileName="DavesPieShop/Models/MockPieRepository.cs" Line="27" Column="6" />
+      <File FileName="DavesPieShop/Startup.cs" Line="37" Column="161" />
+      <File FileName="DavesPieShop/DavesPieShop.csproj" Line="1" Column="1" />
+      <File FileName="DavesPieShop/Models/MockCategoryRepository.cs" Line="12" Column="103" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +14,7 @@
             <Node name="DavesPieShop" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="MockPieRepository.cs" selected="True" />
+                <Node name="MockCategoryRepository.cs" selected="True" />
               </Node>
             </Node>
           </Node>

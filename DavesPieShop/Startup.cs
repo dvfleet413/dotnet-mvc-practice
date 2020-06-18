@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DavesPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,14 +24,19 @@ namespace DavesPieShop
             // everyone knows about the DI container, and can ask it for what it needs
             // This method is where we register framework servives and all of our own services
 
-            // framework services
+            
+            services.AddScoped<IPieRepository, MockPieRepository>();
+            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
             services.AddControllersWithViews();
 
+            // framework services are built in
             // our own services
             // registration options -
             // AddTransient get a new, clean instance
             // AddSingleton gets a single object, the same instance every time
-            // AddScoped creates one instance per request, but uses it for other calls within same request
+            // AddScoped creates one instance per request, but uses it for other calls within same request (like a singleton per request - good for data access)
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

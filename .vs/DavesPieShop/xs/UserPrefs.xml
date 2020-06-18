@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Startup.cs">
+    <Files>
+      <File FileName="DavesPieShop/Program.cs" Line="1" Column="1" />
+      <File FileName="DavesPieShop/DavesPieShop.csproj" Line="1" Column="1" />
+      <File FileName="DavesPieShop/Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="DavesPieShop" expanded="True">
+            <Node name="DavesPieShop" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DavesPieShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

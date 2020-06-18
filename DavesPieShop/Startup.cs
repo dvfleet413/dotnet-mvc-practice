@@ -27,6 +27,10 @@ namespace DavesPieShop
             services.AddControllersWithViews();
 
             // our own services
+            // registration options -
+            // AddTransient get a new, clean instance
+            // AddSingleton gets a single object, the same instance every time
+            // AddScoped creates one instance per request, but uses it for other calls within same request
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

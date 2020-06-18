@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Models/Category.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Models/ICategoryRepository.cs">
     <Files>
       <File FileName="DavesPieShop/Program.cs" Line="21" Column="56" />
       <File FileName="DavesPieShop/Startup.cs" Line="31" Column="16" />
       <File FileName="DavesPieShop/Models/Pie.cs" Line="17" Column="45" />
-      <File FileName="DavesPieShop/Models/Category.cs" Line="6" Column="20" />
+      <File FileName="DavesPieShop/Models/Category.cs" Line="12" Column="6" />
+      <File FileName="DavesPieShop/Models/IPieRepository.cs" Line="10" Column="35" />
+      <File FileName="DavesPieShop/Models/ICategoryRepository.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +16,7 @@
             <Node name="DavesPieShop" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="Category.cs" selected="True" />
+                <Node name="ICategoryRepository.cs" selected="True" />
               </Node>
             </Node>
           </Node>

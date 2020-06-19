@@ -4,6 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DavesPieShop.Migrations
 {
     // This entire migration was created by running `$ add-migration InitialMigration` in package mananger console - WOW!
+    // After checking through everything, run `$ update-database` to run migrations
     public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

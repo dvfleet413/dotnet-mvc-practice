@@ -39,7 +39,7 @@ namespace DavesPieShop
             // We need to use the extension method AddDbContext with the type <AppDbContext> (which we defined in Models), along with options, UseSqlServer
             // We also need to pass in connection string to UseSqlServer.  The above property and constructor method gives us access to appsettings.json through Configuration property
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();

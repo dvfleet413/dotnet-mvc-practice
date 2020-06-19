@@ -1,21 +1,25 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Migrations/20200619192709_InitialMigration.cs">
     <Files>
       <File FileName="DavesPieShop/Program.cs" Line="16" Column="1" />
-      <File FileName="DavesPieShop/appsettings.json" Line="4" Column="5" />
-      <File FileName="DavesPieShop/Models/PieRepository.cs" Line="20" Column="133" />
-      <File FileName="DavesPieShop/Models/IPieRepository.cs" Line="1" Column="1" />
-      <File FileName="DavesPieShop/Models/CategoryRepository.cs" Line="16" Column="80" />
-      <File FileName="DavesPieShop/Models/ICategoryRepository.cs" Line="1" Column="1" />
-      <File FileName="DavesPieShop/Startup.cs" Line="45" Column="53" />
+      <File FileName="DavesPieShop/appsettings.json" />
+      <File FileName="DavesPieShop/Models/PieRepository.cs" />
+      <File FileName="DavesPieShop/Models/IPieRepository.cs" />
+      <File FileName="DavesPieShop/Models/CategoryRepository.cs" />
+      <File FileName="DavesPieShop/Models/ICategoryRepository.cs" />
+      <File FileName="DavesPieShop/Startup.cs" Line="42" Column="34" />
+      <File FileName="DavesPieShop/Migrations/20200619192709_InitialMigration.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DavesPieShop" expanded="True">
             <Node name="DavesPieShop" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20200619192709_InitialMigration.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

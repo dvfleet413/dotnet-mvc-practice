@@ -78,6 +78,7 @@ namespace DavesPieShop
             // this middleware adds support for text only headers for status codes
             app.UseStatusCodePages();
 
+            // this enables convention based routing in our MVC app
             app.UseRouting();
 
             // this middleware enables routing the request to the correct endpoint

@@ -15,5 +15,9 @@ namespace DavesPieShop.Models
         public bool InStock { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+
+        // The following is added after the initial migration
+        // All we need to do is add a migration (`$ add-migration AddNoteToPie` `$ update-database`) and EF Core takes care of everything! 
+        public string Notes { get; set; }
     }
 }

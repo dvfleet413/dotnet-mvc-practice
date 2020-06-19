@@ -6,6 +6,8 @@ using DavesPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -13,6 +15,16 @@ namespace DavesPieShop
 {
     public class Startup
     {
+        // In order to access settings from appsettings.json, we need to create the appropriate property, and pass it into the Startup instance with constructor injection
+        // First create the field
+        public IConfiguration Configuration { get; }
+
+        // Then overload the constructor, pass in IConfiguration, and assign it to the Configuration property
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -24,7 +36,11 @@ namespace DavesPieShop
             // everyone knows about the DI container, and can ask it for what it needs
             // This method is where we register framework servives and all of our own services
 
-            
+            // We need to use the extension method AddDbContext with the type <AppDbContext> (which we defined in Models), along with options, UseSqlServer
+            // We also need to pass in connection string to UseSqlServer
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer());
+
             services.AddScoped<IPieRepository, MockPieRepository>();
             services.AddScoped<ICategoryRepository, MockCategoryRepository>();
             services.AddControllersWithViews();

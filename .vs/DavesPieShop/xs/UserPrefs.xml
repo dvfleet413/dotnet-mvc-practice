@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Views/Shared/_Layout.cshtml">
     <Files>
       <File FileName="DavesPieShop/Views/Pie/List.cshtml" Line="11" Column="2" />
-      <File FileName="DavesPieShop/Startup.cs" Line="60" Column="118" />
-      <File FileName="DavesPieShop/wwwroot/content/style.css" />
+      <File FileName="DavesPieShop/Startup.cs" />
+      <File FileName="DavesPieShop/Views/Shared/_Layout.cshtml" Line="17" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +13,13 @@
             <Node name="DavesPieShop" expanded="True">
               <Node name="Views" expanded="True">
                 <Node name="Pie" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
               </Node>
-              <Node name="wwwroot" expanded="True" selected="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="content" expanded="True" />
+                <Node name="Images" expanded="True" />
                 <Node name="lib" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />

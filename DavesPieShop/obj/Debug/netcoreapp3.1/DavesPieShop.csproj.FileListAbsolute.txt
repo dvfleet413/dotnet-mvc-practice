@@ -30,3 +30,4 @@
 /Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/DavesPieShop.csproj.CopyComplete
 /Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs

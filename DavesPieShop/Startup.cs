@@ -57,7 +57,7 @@ namespace DavesPieShop
 
             // redirects HTTP to HTTPS
             app.UseHttpsRedirection();
-            // this middleware enables ability for site to serve static files
+            // this middleware enables ability for site to serve static files, default location is the wwwroot folder
             app.UseStaticFiles();
             // this middleware adds support for text only headers for status codes
             app.UseStatusCodePages();

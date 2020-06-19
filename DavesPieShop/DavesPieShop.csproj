@@ -11,8 +11,18 @@
     <Folder Include="Views\Pie\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\lib\" />
+    <Folder Include="wwwroot\content\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="libman.json" />
+    <Content Remove="libman.json" />
+    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.js" />
+    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.js" />
   </ItemGroup>
 </Project>

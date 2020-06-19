@@ -37,12 +37,12 @@ namespace DavesPieShop
             // This method is where we register framework servives and all of our own services
 
             // We need to use the extension method AddDbContext with the type <AppDbContext> (which we defined in Models), along with options, UseSqlServer
-            // We also need to pass in connection string to UseSqlServer
+            // We also need to pass in connection string to UseSqlServer.  The above property and constructor method gives us access to appsettings.json through Configuration property
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer());
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IPieRepository, MockPieRepository>();
-            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+            services.AddScoped<IPieRepository, PieRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
 
             // framework services are built in

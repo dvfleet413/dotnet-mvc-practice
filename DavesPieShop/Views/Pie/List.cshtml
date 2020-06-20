@@ -3,17 +3,6 @@
 <h1>@Model.CurrentCategory</h1>
 @foreach (var pie in Model.Pies)
 {
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="@pie.ImageThumbnailUrl" alt="" />
-            <div class="caption">
-                <h3 class="pull-right">@pie.Price.ToString("C")</h3>
-                <h3>
-                    <!-- the following a tag has tag helpers which are brought in through _ViewImports. These are processed server side to allow for routing to the appropriate controller, action, and any additional params (in this case 'id')-->
-                    <a asp-controller="Pie" asp-action="Details" asp-route-id="@pie.PieId">@pie.Name</a>
-                </h3>
-                <p>@pie.ShortDescription</p>
-            </div>
-        </div>
-    </div>
+    <!-- the following calls the partial view _PieCard from './Views/Shared' (which is by convention) and passes var pie as the model -->
+    <partial name="_PieCard" model="pie" />
 }

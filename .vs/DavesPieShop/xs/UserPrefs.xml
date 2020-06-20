@@ -1,21 +1,28 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Views/Shared/_PieCard.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Views/Shared/_Carousel.cshtml">
     <Files>
       <File FileName="DavesPieShop/Views/Pie/Details.cshtml" Line="14" Column="11" />
       <File FileName="DavesPieShop/Views/_ViewImports.cshtml" />
-      <File FileName="DavesPieShop/Views/Pie/List.cshtml" Line="6" Column="5" />
-      <File FileName="DavesPieShop/Views/Shared/_Layout.cshtml" Line="28" Column="112" />
-      <File FileName="DavesPieShop/Views/Shared/_PieCard.cshtml" Line="14" Column="2" />
+      <File FileName="DavesPieShop/Views/Pie/List.cshtml" />
+      <File FileName="DavesPieShop/Views/Shared/_Layout.cshtml" />
+      <File FileName="DavesPieShop/Views/Shared/_PieCard.cshtml" />
+      <File FileName="DavesPieShop/Controllers/HomeController.cs" />
+      <File FileName="DavesPieShop/ViewModels/HomeViewModel.cs" />
+      <File FileName="DavesPieShop/Views/Home/Index.cshtml" />
+      <File FileName="DavesPieShop/Views/Shared/_Carousel.cshtml" Line="28" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DavesPieShop" expanded="True">
             <Node name="DavesPieShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
                 <Node name="Pie" expanded="True" />
                 <Node name="Shared" expanded="True">
-                  <Node name="_PieCard.cshtml" selected="True" />
+                  <Node name="_Carousel.cshtml" selected="True" />
                 </Node>
               </Node>
             </Node>

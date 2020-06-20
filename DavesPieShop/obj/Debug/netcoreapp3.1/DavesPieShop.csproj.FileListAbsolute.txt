@@ -54,3 +54,5 @@
 /Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/Pie/Details.cshtml.g.cs
 /Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_PieCard.cshtml.g.cs
+/Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/davidvanfleet/Projects/DavesPieShop/DavesPieShop/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Carousel.cshtml.g.cs

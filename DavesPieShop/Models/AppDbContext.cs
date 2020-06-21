@@ -15,6 +15,7 @@ namespace DavesPieShop.Models
         // We need to indicate which entities Db Context will manage (behind the scenes this maps to tables in the actual database)
         public DbSet<Pie> Pies { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
         // The following is essential the equivalent of a rails seed file...
         // One difference is that this is handled through a migration...after writing all of the modelbuilder.Entity<Type>().HasData() statements,

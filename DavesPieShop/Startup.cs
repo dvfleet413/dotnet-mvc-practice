@@ -43,6 +43,15 @@ namespace DavesPieShop
 
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+            // The following makes sure that each time somebody visits the site, there is a cart available
+            // GetCart checks for a session parameter of CartId, and if it doesn't exist creates a new ShoppingCart object
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+
+            // These next two services are required to be able to access sessions
+            services.AddHttpContextAccessor();
+            services.AddSession();
+
             services.AddControllersWithViews();
 
             // framework services are built in
@@ -77,6 +86,9 @@ namespace DavesPieShop
             app.UseStaticFiles();
             // this middleware adds support for text only headers for status codes
             app.UseStatusCodePages();
+
+            // this middleware is required to have support for sessions - must be called before UseRouting
+            app.UseSession();
 
             // this enables convention based routing in our MVC app
             app.UseRouting();

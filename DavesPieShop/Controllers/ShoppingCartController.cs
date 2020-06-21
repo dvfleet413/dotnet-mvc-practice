@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DavesPieShop.Models;
+using DavesPieShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -25,13 +26,25 @@ namespace DavesPieShop.Controllers
             var items = _shoppingCart.GetShoppingCartItems();
             _shoppingCart.ShoppingCartItems = items;
 
-            var ShoppingCartViewMOdel = new ShopingCartViewModel
+            var ShoppingCartViewMOdel = new ShoppingCartViewModel
             {
                 ShoppingCart = _shoppingCart,
                 ShoppingCartTotal = _shoppingCart.GetShoppingCartTotal()
             };
 
             return View(ShoppingCartViewMOdel);
+        }
+
+        public RedirectToActionResult AddToShoppingCart(int pieId)
+        {
+            var selectedPie = _pieRepository.AllPies.FirstOrDefault(p => p.PieId == pieId);
+
+            if (selectedPie != null)
+            {
+                _shoppingCart.AddToCart(selectedPie, 1);
+            }
+
+            return RedirectToAction("Index");
         }
 
         public RedirectToActionResult RemoveFromShoppingCart(int pieId)

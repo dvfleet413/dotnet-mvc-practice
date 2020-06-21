@@ -1,30 +1,32 @@
 ﻿<Properties StartupConfiguration="{0EFB030C-367C-4401-BB62-33FFC8DE285D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Views/Shared/_Carousel.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesPieShop/Models/Category.cs">
     <Files>
       <File FileName="DavesPieShop/Views/Pie/Details.cshtml" Line="14" Column="11" />
       <File FileName="DavesPieShop/Views/_ViewImports.cshtml" />
       <File FileName="DavesPieShop/Views/Pie/List.cshtml" />
-      <File FileName="DavesPieShop/Views/Shared/_Layout.cshtml" />
+      <File FileName="DavesPieShop/Views/Shared/_Layout.cshtml" Line="32" Column="23" />
       <File FileName="DavesPieShop/Views/Shared/_PieCard.cshtml" />
       <File FileName="DavesPieShop/Controllers/HomeController.cs" />
-      <File FileName="DavesPieShop/ViewModels/HomeViewModel.cs" />
-      <File FileName="DavesPieShop/Views/Home/Index.cshtml" />
+      <File FileName="DavesPieShop/ViewModels/HomeViewModel.cs" Line="9" Column="30" />
+      <File FileName="DavesPieShop/Views/Home/Index.cshtml" Line="12" Column="47" />
       <File FileName="DavesPieShop/Views/Shared/_Carousel.cshtml" Line="28" Column="7" />
+      <File FileName="DavesPieShop/ViewModels/PiesListViewModel.cs" Line="8" Column="76" />
+      <File FileName="DavesPieShop/Models/ICategoryRepository.cs" Line="1" Column="1" />
+      <File FileName="DavesPieShop/Models/CategoryRepository.cs" Line="1" Column="1" />
+      <File FileName="DavesPieShop/Models/PieRepository.cs" Line="1" Column="1" />
+      <File FileName="DavesPieShop/Models/IPieRepository.cs" Line="8" Column="9" />
+      <File FileName="DavesPieShop/Models/Pie.cs" Line="15" Column="42" />
+      <File FileName="DavesPieShop/Models/Category.cs" Line="10" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DavesPieShop" expanded="True">
             <Node name="DavesPieShop" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Pie" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Carousel.cshtml" selected="True" />
-                </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Category.cs" selected="True" />
               </Node>
+              <Node name="ViewModels" expanded="True" />
             </Node>
           </Node>
         </State>

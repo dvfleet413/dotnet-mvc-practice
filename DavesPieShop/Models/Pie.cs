@@ -13,6 +13,8 @@ namespace DavesPieShop.Models
         public string ImageThumbnailUrl { get; set; }
         public bool IsPieOfTheWeek { get; set; }
         public bool InStock { get; set; }
+        // these two properties establish belongs to relationship
+        // in Category model there is public List<Pie> Pies
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 

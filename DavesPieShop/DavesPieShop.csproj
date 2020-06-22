@@ -16,6 +16,9 @@
     <Folder Include="wwwroot\content\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\ShoppingCart\" />
+    <Folder Include="Components\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\ShoppingCartSummary\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove=".gitignore" />

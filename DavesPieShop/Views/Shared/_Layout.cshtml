@@ -28,6 +28,8 @@
                         <!-- the following a tags use tag helpers, see Pie/List View for more detailed comment -->
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li><a asp-controller="Pie" asp-action="List">Pies</a></li>
+                        <!-- The following invokes the ViewComponent ShoppingCartSummary (see ./Components/ShoppingCartSummary.cs and ./Views/Shared/Components/ShoppingCartSummary/Default.cshtml) -->
+                        @await Component.InvokeAsync("ShoppingCartSummary") 
                     </ul>
                 </div>
             </div>

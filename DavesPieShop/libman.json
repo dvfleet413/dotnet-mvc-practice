@@ -3,6 +3,14 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
+      "library": "jquery@3.5.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "font-awesome@5.13.1",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
       "library": "twitter-bootstrap@5.0.0-alpha1",
       "destination": "wwwroot/lib/bootstrap/",
       "files": [
@@ -21,10 +29,6 @@
         "js/bootstrap.esm.min.js",
         "js/bootstrap.js"
       ]
-    },
-    {
-      "library": "jquery@3.5.1",
-      "destination": "wwwroot/lib/jquery/"
     }
   ]
 }

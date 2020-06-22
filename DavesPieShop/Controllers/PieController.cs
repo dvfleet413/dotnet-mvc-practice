@@ -27,8 +27,23 @@ namespace DavesPieShop.Controllers
         }
 
         //ViewResult is a built in type of .NET Core MVC
-        public ViewResult List()
+        public ViewResult List(string category)
         {
+            IEnumerable<Pie> pies;
+            string currentCategory;
+
+            if (string.IsNullOrEmpty(category))
+            {
+                pies = _pieRepository.AllPies.OrderBy(p => p.PieId);
+                currentCategory = "All pies";
+            }
+            else
+            {
+                pies = _pieRepository.AllPies.Where(p => p.Category.CategoryName == category)
+                    .OrderBy(p => p.PieId);
+                currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.CategoryName == category)?.CategoryName;
+            }
+
             // View is a built in method of .NET Core MVC for rendering views.  Data is passed in as an argument
             // How does controller know which view? It looks for './Views/{ControllerName}/{ActionName}'
             // In this case './Views/Pie/list'
@@ -36,10 +51,12 @@ namespace DavesPieShop.Controllers
             // ViewBag isn't used all that much because it's too dynamic
             // More common to pass data into View method, then define a @model variable in the view
             // Also can create a View Model class that wraps all the data needed in the view
-            PiesListViewModel piesListViewModel = new PiesListViewModel();
-            piesListViewModel.Pies = _pieRepository.AllPies;
-            piesListViewModel.CurrentCategory = "Cheese cakes";
-            return View(piesListViewModel);
+
+            return View(new PiesListViewModel
+            {
+                Pies = pies,
+                CurrentCategory = currentCategory
+            });
         }
 
         public IActionResult Details(int id)

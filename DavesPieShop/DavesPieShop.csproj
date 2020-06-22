@@ -19,6 +19,8 @@
     <Folder Include="Components\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\ShoppingCartSummary\" />
+    <Folder Include="wwwroot\lib\bootstrap\fonts\" />
+    <Folder Include="Views\Shared\Components\CategoryMenu\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove=".gitignore" />
@@ -26,9 +28,16 @@
   <ItemGroup>
     <Content Remove="libman.json" />
     <Content Remove="libman.json" />
-    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.js" />
-    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.js" />
-    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.js" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-utilities.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-reboot.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-grid.css" />
+    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
